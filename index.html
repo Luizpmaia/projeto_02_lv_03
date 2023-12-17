@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div>
+          <h1>MENTORIA</h1>
+          <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </div>
+      </section>
+    </header>
+    <form id="enviar" action="">
+      <!-- ==================informações pessoais==================== -->
+
+      <div class="caixaInformacoes">
+        <h2 class="subTitulo">Informações pessoais</h2>
+        <div id="caixaNomeSobrenome">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" />
+          </div>
+          <div>
+            <label for="sobreNome">Sobre Nome</label>
+            <input type="text" id="sobreNome" />
+          </div>
+        </div>
+        <div>
+          <label for="email">Email <span>(digite um email válido)</span></label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="senha">Senha <span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" id="senha" />
+        </div>
+      </div>
+      <!-- ==================informações do mentor==================== -->
+      <div class="caixaInformacoes">
+        <h2 class="subTitulo">Informações do mentor</h2>
+        <div>
+          <label for="nomeMentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+          <input type="text" id="nomeMentor" />
+        </div>
+      </div>
+      <!-- ==================Seus horários disponíveis==================== -->
+
+      <div class="caixaInformacoes">
+        <h2 class="subTitulo">Seus horários disponíveis</h2>
+        <h3>Primeira Mentoria</h3>
+        <div id="caixaHorarios">
+          <div class="caixaData">
+            <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="data" />
+          </div>
+
+          <div class="caixaAteDas">
+            <div>
+              <label for="hora">Das</label>
+              <input type="time" id="hora" />
+            </div>
+            <div>
+              <label for="hora">Até</label>
+              <input type="time" id="hora" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Segunda Mentoria</h3>
+      <div id="caixaHorarios">
+        <div class="caixaData">
+          <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+          <input type="date" id="data" />
+        </div>
+
+        <div class="caixaAteDas">
+          <div>
+            <label for="hora">Das</label>
+            <input type="time" id="hora" />
+          </div>
+          <div>
+            <label for="hora">Até</label>
+            <input type="time" id="hora" />
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer>
+      <input type="submit" value="Salvar" id="enviar" />
+    </footer>
+  </body>
+</html>

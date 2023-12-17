@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --cor_primaria: #535971;
+  --cor_secundaria: #e5e5e5;
+  --cor_borda: #e6e6f0;
+}
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Staatliches', sans-serif; */
+
+body {
+  font-family: "Staatliches", sans-serif;
+  background-color: var(--cor_secundaria);
+}
+
+header {
+  width: 100%;
+  background-color: var(--cor_primaria);
+  height: 436px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header section {
+  height: 124px;
+  width: 750px;
+
+  color: #ffffff;
+  margin: 124px auto 0;
+}
+
+header section div {
+  width: 417px;
+}
+
+header section h1 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+header section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  width: 750px;
+  border-radius: 20px 20px 0 0;
+  padding: 64px;
+  position: relative;
+  margin: auto;
+  top: -113px;
+}
+
+.caixaInformacoes {
+  margin: 0 0 36px 0;
+}
+
+.subTitulo {
+  width: 95%;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: var(--cor_primaria);
+  border-bottom: 1px solid var(--cor_borda);
+  margin: 0 auto 36px;
+}
+
+#caixaNomeSobrenome {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#caixaNomeSobrenome div {
+  display: inline-block;
+  width: 48%;
+}
+
+#caixaHorarios {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.caixaAteDas {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  gap: 20px;
+}
+
+.caixaAteDas div {
+  width: 100%;
+}
+
+.caixaData {
+  display: inline-block;
+  width: 100%;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: var(--cor_primaria);
+  margin: 0 0 11px 0;
+}
+
+label,
+span {
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+span {
+  color: #c1bccc;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+input {
+  background-color: #fafafc;
+  height: 56px;
+  border: solid 1px #e6e6f0;
+  border-radius: 8px;
+  width: 100%;
+  margin: 8px 0 16px 0;
+  padding: 0 0 0 10px;
+}
+
+#caixaHorarios :nth-child(2) input {
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  top: -113px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: center;
+  width: 750px;
+  height: 160px;
+  margin: auto;
+  background-color: var(--cor_primaria);
+}
+
+footer input {
+  width: 608px;
+  height: 55px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff5374;
+  margin: auto;
+}
+
+/*=======================Responsivo=======================*/
+
+@media (max-width: 600px) {
+  body {
+    width: 110vw;
+  }
+
+  header {
+    width: 100%;
+    background-color: var(--cor_primaria);
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header section {
+    height: 80%;
+    width: 95%;
+    color: #ffffff;
+    margin: 124px auto 0;
+    padding: 5%;
+  }
+
+  form {
+    background-color: #ffffff;
+    width: 95%;
+    border-radius: 20px 20px 0 0;
+    padding: 15px;
+    position: relative;
+    margin: auto;
+    top: -113px;
+  }
+
+  footer {
+    position: relative;
+    top: -113px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 160px;
+    margin: auto;
+    background-color: var(--cor_primaria);
+  }
+}
